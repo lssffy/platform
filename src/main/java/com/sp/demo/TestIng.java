@@ -11,10 +11,6 @@ import java.io.*;
 
 public class TestIng {
 
-    public void testPrint(){
-        System.out.println("222222");
-    }
-
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input;

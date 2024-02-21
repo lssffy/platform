@@ -26,8 +26,6 @@ public class Demo {
         }
         Thread.sleep(3000);
         System.out.println("运行结果：" + count);
-        TestIng testIng = new TestIng();
-        testIng.testPrint();
     }
 
 
