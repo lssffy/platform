@@ -1,7 +1,10 @@
-package com.sp.demo.abstr;/**
- * @Description : 
- * @author : lssffy
- * @date : 2024/2/23 17:25
-*/
-public class Box {
+package com.sp.demo.abstr;
+
+public class Box<T> {
+    private T t;
+    public void add(T t) { this.t = t;}
+
+    public T getT() {
+        return t;
+    }
 }
