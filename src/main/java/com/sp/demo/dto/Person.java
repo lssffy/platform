@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @Description :
  * @date : 2024/2/23 16:20
  */
-public class Person implements Serializable{
+public class Person implements Serializable,Comparable{
 
     private String name;
     private String sex;
@@ -23,4 +23,8 @@ public class Person implements Serializable{
     }
 
 
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }

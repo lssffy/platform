@@ -9,7 +9,7 @@ import org.junit.Test;
  */
 public class VolatileDemo {
 
-    public /*volatile*/ static boolean stop=false;
+    public volatile static boolean stop=false;
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(() -> {
             int i = 0;
@@ -21,6 +21,31 @@ public class VolatileDemo {
         System.out.println("begin start thread");
         Thread.sleep(1000);
         stop = true;
+        VolatileDemo demo = new VolatileDemo();
+        demo.MyTest();
+    }
+
+    public void MyTest(){
+        MyRun myRun = new MyRun(100);
+        myRun.run();
+    }
+
+     class MyRun implements Runnable {
+
+        private Integer id;
+
+        public MyRun(Integer id) {
+            this.id = id;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < id; i++) {
+                System.out.println(i);
+            }
+        }
     }
 
 }
+
+
