@@ -1,5 +1,6 @@
-package com.sp.demo;
+package com.sp.demo.pubsub;
 
+import com.sp.demo.pubsub.MyListener;
 import redis.clients.jedis.Jedis;
 
 /**

@@ -1,4 +1,4 @@
-package com.sp.demo;
+package com.sp.demo.redis;
 
 import redis.clients.jedis.GeoCoordinate;
 import redis.clients.jedis.Jedis;

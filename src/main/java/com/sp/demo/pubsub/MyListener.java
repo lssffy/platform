@@ -1,4 +1,4 @@
-package com.sp.demo;
+package com.sp.demo.pubsub;
 
 import redis.clients.jedis.JedisPubSub;
 
