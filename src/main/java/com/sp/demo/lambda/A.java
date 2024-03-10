@@ -1,6 +1,5 @@
 package com.sp.demo.lambda;
 
-import jdk.nashorn.internal.objects.annotations.Function;
 
 /**
  * @author : lssffy
