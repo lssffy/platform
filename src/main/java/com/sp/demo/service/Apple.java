@@ -9,6 +9,8 @@ import com.sp.demo.util.FruitProvider;
  */
 public class Apple {
 
+    public String name = "aaa";
+
     @FruitProvider(id=1,name="2222",address = "333333")
     private String appleProvider;
 
