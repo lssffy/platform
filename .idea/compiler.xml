@@ -9,5 +9,8 @@
         <module name="springmvc" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hp-redis" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
