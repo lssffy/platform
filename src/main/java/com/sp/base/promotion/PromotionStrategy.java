@@ -1,7 +1,10 @@
-package com.sp.base.promotion;/**
- * @Description : 
+package com.sp.base.promotion;
+
+/**
  * @author : lssffy
+ * @Description :
  * @date : 2024/3/21 17:43
-*/
-public class PromotionStrategy {
+ */
+public interface PromotionStrategy {
+    void doPromotion();
 }
