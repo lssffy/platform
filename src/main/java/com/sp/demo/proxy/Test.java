@@ -8,11 +8,13 @@ package com.sp.demo.proxy;
 public class Test {
 
     public static void main(String[] args) {
-        OneDay oneDay = new LaoWang();
-        oneDay.eat();
-        System.out.println("================================");
-        oneDay.play();
-        System.out.println("================================");
-        oneDay.sleep();
+        try {
+            OneDay oneDay1 = (OneDay) new InvocationHandlerJDK().getInstance(new LaoWang());
+            oneDay1.play();
+            oneDay1.eat();
+            oneDay1.sleep();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 }
